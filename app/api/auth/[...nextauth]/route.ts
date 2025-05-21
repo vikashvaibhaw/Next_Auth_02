@@ -17,8 +17,10 @@ const handler = NextAuth({
                     email: "vvaibhaw6@gmail.com"
                 };
             }
+            
         })
-    ]
+    ],
+    secret:process.env.NEXTAUTH_SECRET
 });
 
 export const GET = handler;
